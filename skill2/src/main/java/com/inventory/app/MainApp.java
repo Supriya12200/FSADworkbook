@@ -22,7 +22,7 @@ public class MainApp {
         Session session = HibernateUtil.getSessionFactory().openSession();
         Transaction tx = session.beginTransaction();
 
-        session.save(new Product("Laptop", "Gaming Laptop", 70000, 5));
+        session.save(new Product("mobile", "oppo", 17000, 2));
         session.save(new Product("Phone", "Android Phone", 30000, 10));
 
         tx.commit();
